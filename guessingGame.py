@@ -5,7 +5,9 @@ a,b = [int(sys.argv[1]), int(sys.argv[2])]
 number = random.randint(a,b)
 
 guess = int(input(f"Guess a number between {a} and {b}. "))
+print("* " *10)
 print("To quit game, guess -1 when prompted")
+print("* " *10)
 diff = abs(guess - number)
 tries = 1
 #possible exceptions: none number input, wrong input param length, non integer argvs
@@ -20,20 +22,20 @@ while g != number:
   c2 = g + 1
   if abs(number - c1) < abs(number - c2):
     if number - c1 == 0:
-      count+=1
+      count+=2 #checks c1 and c2
       break
     stop = c1
   else:
     if number - c2 == 0:
-      count+=1
+      count+=2
       break
     start = c2
   g = stop - (stop - start) // 2
-  count+=1
+  count+=2
   
 #Your guess loop
 while diff != 0 and guess != -1:
-  guess = int(input(f"Wrong! Guess a number between {a} and {b}. "))
+  guess = int(input(f"Not quite! Guess a number between {a} and {b}. "))
   tries += 1
   if (abs(guess - number) < diff):
     print("Getting warmer!")
