@@ -44,7 +44,7 @@ while diff != 0 and guess != -1:
   diff = abs(guess - number)
 
 if guess == -1:
-  print(f"You gave up at try number {tries}! Binary Search: {count}")
+  print(f"The number was {number}! You: {tries}, Binary Search: {count}")
 elif tries < count:
   print(f"Good job, you beat binary search! You: {tries}, Binary Search: {count} ")
 else:
