@@ -24,16 +24,21 @@ def merger():
     if os.path.isdir('input'):
         shutil.rmtree('input')
     os.mkdir('input')
+    
     if not prelim():
         return
+    
     print(f'Attempting to merge {len(os.listdir("input"))} file(s)')
+    
     merger = PyPDF2.PdfFileMerger()
     count = 0
+    
     for fn in sorted(os.listdir('input')):
         if fn.endswith(".pdf"):
             print(fn)
             merger.append(f'input/{fn}')
             count += 1
+    
     merger.write('input/out.pdf')
     print(f"Successfully merged {count} file(s)")
     
