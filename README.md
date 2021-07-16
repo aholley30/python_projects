@@ -13,4 +13,4 @@
 ## passCheck.py
 
 * To run: python3 passCheck.py
-* Securely check if your password has appeared in a data breach
+* Securely check if your password has appeared in a data breach.
