@@ -9,3 +9,8 @@
 
 * To run: python3 pdf_merge.py
 * A lightweight pdf merger that creates an input folder for the files you want to merge. The files should be numbered if you want them merged in a particular order.
+
+## passCheck.py
+
+* To run: python3 passCheck.py
+* Securely check if your password has appeared in a data breach
