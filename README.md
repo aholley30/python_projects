@@ -16,7 +16,7 @@
 * Securely check if your password has appeared in a data breach.
 
 ## What To Learn
-I wanted to see if learning the things I was learning was worth it, so I figured I'd take a sort of poll. I made a program that'd take in skills I found on LinkedIn Jobs and make a frequency graph. Next I want to add in web scraping.
+I wanted to see what the most popular programming languages and skills were, so I made a program that'd take in skills I found on LinkedIn Jobs and make a frequency graph. Next I want to add in web scraping.
 * To run: python3 jobs.py
 * Can take in a single input or a comma separated list
 * Collected data from 30 different job postings
